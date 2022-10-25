@@ -1,0 +1,109 @@
+body {
+  background-color: antiquewhite;
+  font-family: arial;
+  color: #19450d;
+  min-width: 580px
+}
+
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  margin-bottom: 10px;
+  width: 15%;
+  height: auto;
+}
+
+ul{
+  padding: 0;
+
+}
+
+li {
+  display: inline;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: #19450d;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+.nav-cart-cont {
+  justify-content: center;
+  font-size: 1.5em;
+  display: flex;
+  border-bottom: 1px solid #19450d;
+}
+
+.nav-bar {
+  margin: 0 0 0 80px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-container {
+  flex-grow: -1;
+  display: flex;
+  align-items: center;
+}
+
+
+main h1 {
+  padding: 20px 0 0 20px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: 50% 50%;
+  grid-gap: 10px;
+
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+
+.pizza1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+.pizza2 {
+
+}
+.pizza3 {
+
+}
+.pizza4 {
+
+}
+.pizza5 {
+
+}
+.pizza6 {
+
+}
