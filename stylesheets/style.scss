@@ -13,11 +13,29 @@
   padding: 1rem;
 }
 
+body {
+  background-color: $background-colour;
+  font-family: arial;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: black;
+}
+
 
 main {
   div {
     // overflow: hidden;
-    width: 100vw;
+    width: 100%;
 
     div {
       width: 100%;

@@ -22,6 +22,48 @@ header div div {
   justify-content: space-between;
 }
 
+nav {
+  background-color: #ffffff;
+  color: #ed1c24;
+  height: 5em;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: center;
+}
+nav div {
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+}
+nav div div ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div div ul li {
+  float: left;
+  display: inline;
+  list-style: none;
+  border-right: 2px solid;
+  padding-right: 10px;
+  transform: skew(-10deg);
+}
+nav div div ul li:nth-child(1) {
+  color: #ffffff;
+  background-color: #ed1c24;
+  border-radius: 10px;
+  padding: 1rem;
+  transform: skew(0deg);
+}
+nav div div ul li:nth-child(2) {
+  color: #ffffff;
+  background-color: #ed1c24;
+  border-radius: 10px;
+  padding: 1rem;
+  transform: skew(0deg);
+}
+
 body {
   background-color: #000000;
   font-family: arial;
@@ -40,52 +82,8 @@ a:hover {
   color: black;
 }
 
-nav {
-  background-color: #ffffff;
-  color: #ed1c24;
-  height: 5em;
-  display: flex;
-  padding: 0 15px;
-  align-items: center;
-}
-nav div {
-  width: 100%;
-  height: auto;
-}
-nav div div ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-nav div div ul li {
-  display: inline;
-  list-style: none;
-}
-nav div div ul li a::before {
-  content: "";
-  background: #ed1c24;
-  height: 1em;
-  width: 2px;
-  position: absolute;
-  right: 0;
-  top: 1rem;
-  transform: rotate(16deg);
-}
-nav div div ul li:nth-child(1) {
-  color: #ffffff;
-  background-color: #ed1c24;
-  border-radius: 10px;
-  padding: 1rem;
-}
-nav div div ul li:nth-child(2) {
-  color: #ffffff;
-  background-color: #ed1c24;
-  border-radius: 10px;
-  padding: 1rem;
-}
-
 main div {
-  width: 100vw;
+  width: 100%;
 }
 main div div {
   width: 100%;
@@ -96,9 +94,9 @@ main div div img {
   min-height: 100%;
   min-width: 100%;
   -o-object-fit: none;
-     object-fit: none; /* Do not scale the image */
+     object-fit: none;
   -o-object-position: center;
-     object-position: center; /* Center the image within the element */
+     object-position: center;
   height: 100px;
   width: 100px;
 }/*# sourceMappingURL=style.css.map */

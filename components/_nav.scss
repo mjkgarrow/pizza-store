@@ -1,3 +1,12 @@
+@import '../stylesheets/default/colours';
+
+@mixin button-styling {
+  color: $foreground-colour;
+  background-color: $primary-colour;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
 nav {
   background-color: $foreground-colour;
   color: $primary-colour;
@@ -5,10 +14,12 @@ nav {
   display: flex;
   padding: 0 15px;
   align-items: center;
+  justify-content: center;
 
   div {
     width: 100%;
     height: auto;
+    max-width: 1200px;
     
     div {
       ul {
@@ -17,21 +28,27 @@ nav {
         justify-content: space-between;
 
         li {
+          float: left;
           display: inline;
           list-style: none;
+          border-right: 2px solid;
+          padding-right: 10px;
+          transform: skew(-10deg);
         }
         
 
         li:nth-child(1) {
           @include button-styling;
-          
+          transform: skew(0deg); 
         }
 
         li:nth-child(2) {
           @include button-styling;
+          transform: skew(0deg);
         }
 
       }
     }
   }
 }
+
