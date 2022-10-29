@@ -1,0 +1,23 @@
+@import '../default/colours';
+
+footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-evenly;
+  div {
+    h2 {
+      color: red;
+      padding-bottom: 10px;
+    }
+    div {
+      width: 250px;
+      color: white;
+      ul{
+        li{
+          list-style: none;
+        }
+      }
+    }
+  }
+}
