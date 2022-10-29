@@ -53,17 +53,38 @@ main {
   }
   .boxes {
     display: flex;
+    padding: 50px;
     div{
+      display: flex;
+      justify-content: center;
       width: 100%;
-      height: 200px;
+      height: 350px;
       div {
+        color: white;
         padding: 10px;
         background-color: $primary-colour;
         width: 80%;
         height: 100%;
-        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         div {
+          color: $primary-colour;
           background-color: white;
+          margin: 20px;
+          button {
+            all:unset;
+            @include button-styling;
+          }
+          button:hover {
+            color: $primary-colour;
+            background-color: transparent;
+            text-decoration: underline;
+            line-height: 1em;
+            padding: 17px;
+
+          }
         }
       }
     }
