@@ -1,10 +1,16 @@
-# Coder Pizza
+# Live Coding Pizza Store
 
-Not just simple pizza shop but we are specialised for coderacademy
+A simple pizza shopfront, live coded for Coder Academy
 
 ## Website Idea
 
 [Bubba Pizza](https://www.bubbapizza.com.au/)
+
+## Screenshot
+
+[Netlify](https://comfy-sfogliatella-7de689.netlify.app/)
+
+![Screenshot](./images/website-image.png)
 
 ## Installation
 
