@@ -1,0 +1,17 @@
+header {
+  background-color: $background-colour;
+  display: flex;
+  justify-content: center;
+  div {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    background-color: $background-colour;
+    div {
+      justify-content: space-between;
+    }
+  }
+}

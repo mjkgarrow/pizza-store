@@ -1,89 +1,16 @@
 @import './default/reset';
 @import './default/colours';
 
+// Components
+@import '../components/header';
+@import '../components/nav';
+
 
 @mixin button-styling {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: $background-colour;
-  font-family: arial;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: black;
-}
-
-header {
-  
-  div {
-    padding: 3% 0 0 0;
-    display: flex;
-    flex-direction: row;
-    max-width: 1200px;
-    justify-content: space-between;
-    background-color: $background-colour;
-  }
-}
-
-nav {
-  background-color: $foreground-colour;
-  height: 50px;
-  display: flex;
-  padding: 0 15px;
-  
-  div {
-    width: 100%;
-    height: auto;
-    div {
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        li {
-          display: inline;
-          list-style: none;
-
-          a::before {
-            content: "";
-            background: $primary-colour;
-            height: 1em;
-            width: 2px;
-            position: absolute;
-            right: 0;
-            top: 1rem;
-            transform: rotate(16deg);
-          }
-        }
-
-        li:nth-child(1) {
-          background-color: $primary-colour;
-        }
-
-        li:nth-child(2) {
-          background-color: $primary-colour;
-        }
-
-      }
-    }
-  }
+  color: $foreground-colour;
+  background-color: $primary-colour;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 
@@ -100,11 +27,10 @@ main {
       img {
         min-height: 100%;
         min-width: 100%;
-        object-fit: none; /* Do not scale the image */
-        object-position: center; /* Center the image within the element */
+        object-fit: none;
+        object-position: center;
         height: 100px;
         width: 100px;
-        // opacity: 0;
       }
     }
   }

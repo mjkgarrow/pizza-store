@@ -1,0 +1,37 @@
+nav {
+  background-color: $foreground-colour;
+  color: $primary-colour;
+  height: 5em;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+
+  div {
+    width: 100%;
+    height: auto;
+    
+    div {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+          display: inline;
+          list-style: none;
+        }
+        
+
+        li:nth-child(1) {
+          @include button-styling;
+          
+        }
+
+        li:nth-child(2) {
+          @include button-styling;
+        }
+
+      }
+    }
+  }
+}
