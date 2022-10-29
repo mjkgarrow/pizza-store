@@ -33,8 +33,7 @@ a:hover {
 
 
 main {
-  div {
-    // overflow: hidden;
+  .hero-pic {
     width: 100%;
 
     div {
@@ -49,6 +48,23 @@ main {
         object-position: center;
         height: 100px;
         width: 100px;
+      }
+    }
+  }
+  .boxes {
+    display: flex;
+    div{
+      width: 100%;
+      height: 200px;
+      div {
+        padding: 10px;
+        background-color: $primary-colour;
+        width: 80%;
+        height: 100%;
+        float: right;
+        div {
+          background-color: white;
+        }
       }
     }
   }
